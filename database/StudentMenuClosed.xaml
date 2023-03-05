@@ -1,0 +1,30 @@
+﻿<Window x:Class="database.StudentMenuClosed"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:database"
+        mc:Ignorable="d"
+        Title="StudentMenuClosed" Height="852" Width="393" Background="#FF569BB8">
+    <Grid>
+
+        <Button x:Name="Button_Logo_Student_Menu_Closed" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="80" Width="90" BorderThickness="0,0,0,0" Click="Button_Logo_Student_Menu_Closed_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/unistat.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" FontFamily="Sitka Display" FontSize="20" Margin="0,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="254" TextAlignment="Center" Foreground="White"><Run Language="en-gb" Text="If you have any questions, contact us: "/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" FontFamily="Sitka Display" Margin="0,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="20"><Run Language="en-gb" Text="Email:"/><LineBreak/><Run Language="en-gb" Text="info@unistat@.com"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" FontFamily="Sitka Display" Margin="0,485,154,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="20"><Run Language="en-gb" Text="Phone number:"/><LineBreak/><Run Language="en-gb" Text="1234567890"/></TextBlock>
+        <TextBlock FontFamily="Sitka Display" Margin="116,592,116,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="20"><Run Language="en-gb" Text="Website:"/><LineBreak/><Run Language="en-gb" Text="www.unistat.com"/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="361" Margin="-18,256,0,0" Stroke="#FF8F8F8F" VerticalAlignment="Top" Width="82" Fill="#FFEAEFF1" RadiusY="31" RadiusX="20" RenderTransformOrigin="0.105,0.497"/>
+        <Button x:Name="Button_BackMenu_StudentMenu_Closed"  Content="" Margin="10,278,0,0" VerticalAlignment="Top" Height="40" BorderThickness="0,0,0,0" HorizontalAlignment="Left" Width="45" Click="Button_Back_StudentMenuClosed_Log_In_Click" BorderBrush="#FFEAEFF1" Opacity="0.93">
+            <Button.Background>
+                <ImageBrush ImageSource="/button_lines.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Button_LogOut_Student_Menu_Closed"  Content="Log out"  FontFamily="Sitka Display" HorizontalAlignment="Left" Margin="274,767,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.819,0.904" Height="37" Width="74" Background="#FF569BB8" BorderBrush="#FF569BB8" Foreground="White" FontSize="22" Click="Button_LogOut_Student_Menu_Closed_Click">
+
+        </Button>
+    </Grid>
+</Window>

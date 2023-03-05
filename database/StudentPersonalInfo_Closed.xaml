@@ -1,0 +1,42 @@
+﻿<Window x:Class="database.StudentPersonalInfo_Closed"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:database"
+        mc:Ignorable="d"
+        Title="StudentPersonalInfo_Closed" Height="852" Width="393" Background="#FF569BB8">
+    <Grid>
+        <Button x:Name="Button_Logo_Student_PersonalInfo_Closed" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="80" Width="90" BorderThickness="0,0,0,0" Click="Button_Logo_Student_PersonalInfo_Closed_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/unistat.png"/>
+            </Button.Background>
+        </Button>
+
+        <Rectangle HorizontalAlignment="Left" Height="361" Margin="-18,256,0,0" Stroke="#FF8F8F8F" VerticalAlignment="Top" Width="82" Fill="#FFEAEFF1" RadiusY="31" RadiusX="20" RenderTransformOrigin="0.105,0.497"/>
+        <Button x:Name="Button_BackMenu_StudentPersonalInfo_Closed"  Content="" Margin="10,278,0,0" VerticalAlignment="Top" Height="40" BorderThickness="0,0,0,0" HorizontalAlignment="Left" Width="45" Click="Button_BackMenu_StudentPersonalInfo_Closed_Click" BorderBrush="#FFEAEFF1" Opacity="0.93">
+            <Button.Background>
+                <ImageBrush ImageSource="/button_lines.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Button_LogOut_StudentPersonalInfo_Closed"  Content="Log out"  FontFamily="Sitka Display" HorizontalAlignment="Left" Margin="274,767,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.819,0.904" Height="37" Width="74" Background="#FF569BB8" BorderBrush="#FF569BB8" Foreground="White" FontSize="22" Click="Button_LogOut_StudentPersonalInfo_Closed_Click">
+
+        </Button>
+        
+
+        <Label HorizontalAlignment="Left" Margin="85,268,0,0"  VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="Student ID:"/></Label>
+            <Label x:Name="TextBlock_StudentID_StudentPersonalInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,265,0,0"  VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display"/>
+            <Label HorizontalAlignment="Left" Margin="85,334,0,0"  VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22" RenderTransformOrigin="0.409,3.059"><Run Language="en-gb" Text="First Name:"/></Label>
+            <Label HorizontalAlignment="Left" Margin="85,0,0,0"  VerticalAlignment="Center" Foreground="White" FontFamily="Sitka Display" FontSize="22" RenderTransformOrigin="0.409,3.059"><Run Language="en-gb" Text="Last Name:"/></Label>
+            <Label HorizontalAlignment="Left" Margin="85,479,0,0"  VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22" RenderTransformOrigin="0.409,3.059"><Run Language="en-gb" Text="EGN:"/></Label>
+            <Label HorizontalAlignment="Left" Margin="85,543,0,0"  VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22" RenderTransformOrigin="0.409,3.059"><Run Language="en-gb" Text="Year of Graduation:"/></Label>
+            <Label HorizontalAlignment="Left" Margin="85,610,0,0"  VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22" RenderTransformOrigin="0.409,3.059"><Run Language="en-gb" Text="Major ID:"/></Label>
+            <Label HorizontalAlignment="Left" Margin="85,677,0,0"  VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22" RenderTransformOrigin="0.409,3.059"><Run Language="en-gb" Text="School Email:"/></Label>
+            <Label x:Name="TextBlock_FirstName_StudentPersonalInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,329,0,0"  VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display"/>
+            <Label x:Name="TextBlock_LastName_StudentPersonalInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,404,0,0"  VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Content=""/>
+            <Label x:Name="TextBlock_EGN_StudentPersonalInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,479,0,0" VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Content=""/>
+        <Label x:Name="TextBlock_Year_StudentPersonalInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="274,543,0,0"  VerticalAlignment="Top" Foreground="White" Height="33" Width="86" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Content=""/>
+        <Label x:Name="TextBlock_MajorID_StudentPersonalInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,610,0,0"  VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Content=""/>
+        <Label x:Name="TextBlock_SchoolEmail_StudentPersonalInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,677,0,0"  VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Content=""/>
+    </Grid>
+</Window>

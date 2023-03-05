@@ -1,0 +1,89 @@
+﻿<Window x:Class="database.DepartmentIInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:database"
+        mc:Ignorable="d"
+        Title="DepartmentIInfo" Height="852" Width="393" Background="#FF569BB8">
+    <Window.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="RoundedButton" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="31" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#355D6E"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="Button_Logo_DepartmentInfo" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="80" Width="90" BorderThickness="0,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/unistat.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Button_LogOut_DepartmentInfo"  Content="Log out"  FontFamily="Sitka Display" HorizontalAlignment="Left" Margin="274,767,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.819,0.904" Height="37" Width="74" Background="#FF569BB8" BorderBrush="#FF569BB8" Foreground="White" FontSize="22">
+
+        </Button>
+
+        <TextBlock HorizontalAlignment="Left" Margin="55,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="Department ID:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="55,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="Department Name:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="55,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="Head of Department:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="55,492,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="Building Name:"/></TextBlock>
+        <TextBlock x:Name="TextBlock_DepartmentID_DepartmentInfo"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="247,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="33" Width="113" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display"/>
+        <TextBlock x:Name="TextBlock_DepartmentName_DepartmentInfo"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="247,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="33" Width="113" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Text=""/>
+        <TextBlock x:Name="TextBlock_Head_of_Department_DepartmentInfo"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="247,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="33" Width="113" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Text=""/>
+        <TextBlock x:Name="TextBlock_BuildingName_DepartmentInfo"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="247,487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="33" Width="113" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display" Text=""/>
+
+        <Button x:Name="Button_Back_DepartmentInfo" Style="{DynamicResource RoundedButton}"  Content="Back" Height="52" Width="118" HorizontalAlignment="Left" Margin="29,760,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="19" BorderBrush="White" Background="White" Foreground="#FF355D6E" Click="Button_Back_DepartmentInfo_Click"/>
+
+    </Grid>
+</Window>

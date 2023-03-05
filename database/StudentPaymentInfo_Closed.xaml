@@ -1,0 +1,34 @@
+﻿<Window x:Class="database.StudentPaymentInfo_Closed"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:database"
+        mc:Ignorable="d"
+        Title="StudentPaymentInfo_Closed"  Height="852" Width="393" Background="#FF569BB8">
+    <Grid>
+        <Button x:Name="Button_Logo_StudentPayment_Closed" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="80" Width="90" BorderThickness="0,0,0,0" Click="Button_Logo_StudentPayment_Closed_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/unistat.png"/>
+            </Button.Background>
+        </Button>
+
+        <Rectangle HorizontalAlignment="Left" Height="361" Margin="-18,256,0,0" Stroke="#FF8F8F8F" VerticalAlignment="Top" Width="82" Fill="#FFEAEFF1" RadiusY="31" RadiusX="20" RenderTransformOrigin="0.105,0.497"/>
+        <Button x:Name="Button_BackMenu_StudentPaymentInfo_Closed"  Content="" Margin="10,278,0,0" VerticalAlignment="Top" Height="40" BorderThickness="0,0,0,0" HorizontalAlignment="Left" Width="45" Click="Button_Back_StudentMenuClosed_Log_In_Click" BorderBrush="#FFEAEFF1" Opacity="0.93">
+            <Button.Background>
+                <ImageBrush ImageSource="/button_lines.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Button_LogOut_StudentPaymentInfo_Closed"  Content="Log out"  FontFamily="Sitka Display" HorizontalAlignment="Left" Margin="274,767,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.819,0.904" Height="37" Width="74" Background="#FF569BB8" BorderBrush="#FF569BB8" Foreground="White" FontSize="22" Click="Button_LogOut_StudentPaymentInfo_Closed_Click">
+        </Button>
+
+        <TextBlock HorizontalAlignment="Left" Margin="85,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="IBAN:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="85,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="Scholarship Status:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="85,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Sitka Display" FontSize="22"><Run Language="en-gb" Text="Bank Name:"/></TextBlock>
+
+        <TextBlock x:Name="TextBlock_IBAN_StudentPaymentInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display"/>
+        <TextBlock x:Name="TextBlock_ScholarshipStatus_StudentPaymentInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="274,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="33" Width="86" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display"/>
+        <TextBlock x:Name="TextBlock_BankName_StudentPaymentInfo_Closed"  Padding="4,10,5,0" HorizontalAlignment="Left" Margin="233,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="33" Width="127" Background="#FF355D6E" FontSize="22" FontFamily="Sitka Display"/>
+
+    </Grid>
+</Window>
